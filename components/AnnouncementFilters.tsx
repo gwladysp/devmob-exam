@@ -86,8 +86,9 @@ function AnnouncementSearch({}: AnnouncementSearchProps): React.ReactElement {
             <TextInput
               mode="outlined"
               style={styles.input}
-              keyboardType="numeric"
+              keyboardType="numbers-and-punctuation"
               value={year}
+              maxLength={4}
               onChangeText={setYear}
               placeholder="Entrez une année"
             />
@@ -95,7 +96,7 @@ function AnnouncementSearch({}: AnnouncementSearchProps): React.ReactElement {
             <TextInput
               mode="outlined"
               style={styles.input}
-              keyboardType="numeric"
+              keyboardType="numbers-and-punctuation"
               value={minPrice}
               onChangeText={setMinPrice}
               placeholder="Entrez un prix"
@@ -104,7 +105,7 @@ function AnnouncementSearch({}: AnnouncementSearchProps): React.ReactElement {
             <TextInput
               mode="outlined"
               style={styles.input}
-              keyboardType="numeric"
+              keyboardType="numbers-and-punctuation"
               value={maxPrice}
               onChangeText={setMaxPrice}
               placeholder="Entrez un prix"
